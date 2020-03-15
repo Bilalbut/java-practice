@@ -10,7 +10,9 @@ package userLog;
  * @author Bilal Butt
  */
 public class Main {
-    public static void main(String[] args){
-        System.out.print("Test");
+
+    public static void main(String[] args) {
+        User usr = new User();
+        System.out.print(usr);
     }
 }
