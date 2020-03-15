@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userLog;
+package Model;
 
 /**
  *
@@ -14,16 +14,21 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private String phone_No;
+    private String phoneNo;
 
     public User() {
+        this.firstName = "";
+        this.lastName = "";
+        this.phoneNo="";
+        this.email="";
+        
     }
 
-    public User(String firstName, String lastName, String email, String phone_No) {
+    public User(String firstName, String lastName, String email, String phoneNo) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.phone_No = phone_No;
+        this.phoneNo = phoneNo;
     }
 
     public String getFirstName() {
@@ -50,16 +55,16 @@ public class User {
         this.email = email;
     }
 
-    public String getPhone_No() {
-        return phone_No;
+    public String getPhoneNo() {
+        return phoneNo;
     }
 
-    public void setPhone_No(String phone_No) {
-        this.phone_No = phone_No;
+    public void setPhoneNo(String phone_No) {
+        this.phoneNo = phone_No;
     }
 
     @Override
     public String toString() {
-        return "User{" + "firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", phone_No=" + phone_No + '}';
+        return "\nUser{" + "\n\tfirstName=" + firstName + "\n\tlastName=" + lastName + "\n\temail=" + email + "\n\tphoneNo=" + phoneNo + "\n}";
     }
 }
